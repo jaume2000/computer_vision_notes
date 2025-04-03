@@ -1,0 +1,21 @@
+% config.tex
+
+\documentclass[a4paper,12pt]{book}
+
+% Paquetes adicionales
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% Definir encabezados, márgenes, etc.
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Mi Proyecto de LaTeX}
+\fancyhead[R]{\thepage}
+
+\titleformat{\part}[block]{\normalfont\LARGE\bfseries}{\thepart}{1em}{}
+
+% Otras configuraciones...

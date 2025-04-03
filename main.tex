@@ -1,5 +1,5 @@
-\documentclass{report} % Cambiado de article a report
-\usepackage{graphicx} % Required for inserting images
+%main.tex
+\input{config.tex}
 
 \title{Deep Learning: Modern Artificial Vision}
 \author{Jaume Ivars Grimalt }
@@ -7,67 +7,29 @@
 
 \begin{document}
 
+
 \maketitle
 
+\tableofcontents % Generates the table of contents
+
+\pagenumbering{roman} % Change page numbering to Roman
 \chapter*{Acknowledgements}
 A special thanks to all those who contributed to this work...
 \addcontentsline{toc}{chapter}{Acknowledgements} % Añade Acknowledgements al índice
-\newpage
 
 \chapter*{Preface}
 This is the preface of the document...
 \addcontentsline{toc}{chapter}{Preface} % Añade Preface al índice
 \newpage
-
-\pagenumbering{roman} % Change page numbering to Roman
-\tableofcontents % Generates the table of contents
-
-\newpage
-
-\pagenumbering{arabic} % Change page numbering to Arabic after TOC
-
-\part{Introduction}
-
-\chapter{Introduction}
-\chapter{Deep Learnining}
-\chapter{Optimization}
-\chapter{Datasets}
-\chapter{Introduction to CNNs}
-\section{Image Classification}
-\chapter{Model evaluation}
-
-\part{State of the Art Implementations}
-
-\chapter{Classic architectures of CNNs}
-\section{FPNs}
-about FPNs
-\section{PANs}
-\section{Deformable Convolutions}
-
-\chapter{Classic architectures for Image Segmentation}
-\section{U-Net}
-\section{U2-Net}
-
-\chapter{Vision Transformers}
-\section{DETR}
-\section{Deformable-DETR}
-\section{CO-DETR}
-
-\chapter{Bounding-box Object detection}
-
-\chapter{Semantic Segmentation}
-
-\chapter{Density Maps}
+\pagenumbering{arabic} % Change page numbering to Roman
 
 
-\part{Generative Models}
-\chapter{Difussion Models}
-\section{Stable Difussion}
-\chapter{Text to Image Difussion Models}
-\chapter{Layout to Image Difussion Models}
+% Incluir las partes
+\include{parts/part_1/part_1}
+\include{parts/part_2/part_2}
+\include{parts/part_3/part_3}
+\include{parts/part_5/part_5}
+\include{parts/part_6/part_6}
 
-\chapter{GANs}
-
-\chapter{Style Transfer}
 
 \end{document}
