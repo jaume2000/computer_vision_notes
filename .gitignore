@@ -1,0 +1,32 @@
+# Archivos auxiliares de LaTeX
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.bcf
+*.blg
+*.bbl
+*.run.xml
+*.synctex.gz
+*.synctex
+*.pdfsync
+
+# Archivos de configuración de compiladores
+latexmkrc
+
+# Directorios de salida
+build/
+_minted*/
+
+# Archivos de imágenes generados
+*.eps
+*.ps
+
+# Archivos temporales del editor
+*~
+.DS_Store
+Thumbs.db
